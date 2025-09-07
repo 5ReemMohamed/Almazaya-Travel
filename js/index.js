@@ -47,13 +47,18 @@ localStorage.setItem("language", currentLang);
 
   applyTranslation(currentLang);
 
-  if (translateBtn) {
-    translateBtn.addEventListener("click", function () {
-      currentLang = currentLang === "en" ? "ar" : "en";
-      localStorage.setItem("language", currentLang);
-      applyTranslation(currentLang);
-    });
-  }
+ if (translateBtn) {
+  translateBtn.addEventListener("click", function () {
+    currentLang = currentLang === "en" ? "ar" : "en";
+    localStorage.setItem("language", currentLang);
+    applyTranslation(currentLang);
+
+    if (navbarCollapse && navbarCollapse.classList.contains("show")) {
+      new bootstrap.Collapse(navbarCollapse).hide();
+    }
+    navbar.classList.add("scrolled"); 
+  });
+}
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
