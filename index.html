@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Almazaya Travel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav id="main-nav" class="navbar navbar-expand-lg text-white fixed-top py-4">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="#home">
+        <i class="fas fa-compass mx-2 fs-3"></i>Almazaya Travel
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse text-center mt-5 mt-lg-0 " id="navbarNav">
+        <ul
+          class="navbar-nav mx-auto text-white d-flex justify-content-center align-items-center flex-column gap-4 gap-lg-2 flex-lg-row">
+          <li class="nav-item">
+            <a class="nav-link text-white" data-ar="الرئيسية" data-en="Home" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" data-ar="من نحن" data-en="About" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" data-ar="الرحلات" data-en="Travels" href="#travels">Travels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" data-ar="لماذا نحن" data-en="Why Choose Us" href="#why-choose-us">Why Choose
+              Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" data-ar="اتصل بنا" data-en="Contact" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button class="btn translate-btn" id="translateBtn" data-lang="en">
+          <i class="fas fa-globe"></i>
+          <span class="me-2" data-en="العربية" data-ar="English"></span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <header class="hero-section d-flex flex-column justify-content-center align-items-center text-center text-white"
+    id="home">
+    <h6 class="mb-2" data-en="EXPLORE YOUR LIFE" data-ar="اكتشف حياتك"  data-aos="fade-up" data-aos-delay="800" >
+      EXPLORE YOUR LIFE
+    </h6>
+    <h1  data-aos="fade-up" data-aos-delay="800" class="mb-3" data-en="Discover & book extraordinary trips" data-ar="اكتشف واحجز رحلات استثنائية">
+      Discover & book extraordinary trips
+    </h1>
+    <p  data-aos="fade-up" data-aos-delay="800" class="mb-4 description" data-en="Save up to 50% on the best attractions, tours and activities with Almazaya"
+      data-ar="وفر حتى 50% على أفضل المزارات والجولات والأنشطة مع Almazaya">
+      Save up to 50% on the best attractions, tours and activities with Almazaya
+    </p>
+
+
+
+    <div class="d-flex justify-content-center flex-wrap gap-3 text-white small guarantees mt-4 mb-5">
+      <div  data-aos="fade-up" data-aos-delay="800" class="mx-3 box h-100 p-4 text-center">
+        <i class="fas fa-tag fa-2x mb-3"></i>
+        <p data-en="100% Best Price Guarantee" data-ar="ضمان أفضل سعر 100%" class="mb-0">100% Best Price Guarantee</p>
+      </div>
+      <div  data-aos="fade-up" data-aos-delay="800" class="mx-3 box h-100 p-4 text-center">
+        <i class="fas fa-headset fa-2x mb-3"></i>
+        <p data-en="24/7 Expert Customer Support" data-ar="دعم عملاء على مدار الساعة" class="mb-0">24/7 Expert Customer
+          Support</p>
+      </div>
+      <div  data-aos="fade-up" data-aos-delay="800" class="mx-3 box h-100 p-4 text-center">
+        <i class="fas fa-lock fa-2x mb-3"></i>
+        <p data-en="Fast & Secure Booking" data-ar="حجز سريع وآمن" class="mb-0">Fast & Secure Booking</p>
+      </div>
+    </div>
+    <div  data-aos="fade-up" data-aos-delay="800" class="hero-buttons mt-4 d-flex flex-wrap gap-3 justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="600">
+      <a data-ar="استكشف الباقات" data-en="Explore Packages" href="#travels" class="btn btn-primary btn-lg mx-3">Explore
+        Packages</a>
+      <a data-ar="اعرف المزيد" data-en="Learn More" href="#about" class="btn btn-outline-light btn-lg">Learn More</a>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="section-padding about" id="about">
+      <div class="container py-5">
+        <div class="row g-4 align-items-center justify-content-center">
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="800">
+            <div class="position-relative mb-4 mb-md-0 images">
+              <img src="images/about-2.jpg" class="rounded-4 shadow image-1" alt="City">
+              <img src="images/about-1.jpg" class="rounded-4 shadow position-absolute about-img-overlap"
+                alt="Travelers">
+            </div>
+          </div>
+          <div class="col-lg-6"  data-aos="zoom-in" data-aos-delay="800">
+            <div>
+              <div class="text-uppercase mb-2 start" data-en="OUR PLEASANT EXPERIENCE" data-ar="تجربتنا المميزة">
+                OUR PLEASANT EXPERIENCE
+              </div>
+              <h2 class="fw-bold mb-4" data-en="About Almazaya Travel" data-ar="حول المزايا للسفر">
+                About Almazaya Travel
+              </h2>
+
+              <p class="text-muted mb-3"
+                data-en="Almazaya Travel is proud to operate as an officially registered travel agency in Saudi Arabia, backed by our parent company in Malaysia. We specialize in creating extraordinary travel experiences across Southeast Asia's most captivating destinations."
+                data-ar="تفخر المزايا للسفر بكونها وكالة سفر مسجلة رسميًا في المملكة العربية السعودية، بدعم من شركتنا الأم في ماليزيا. نحن متخصصون في ابتكار تجارب سفر استثنائية في أكثر وجهات جنوب شرق آسيا سحرًا.">
+                Almazaya Travel is proud to operate as an officially registered travel agency in Saudi Arabia, backed by
+                our parent company in Malaysia. We specialize in creating extraordinary travel experiences across
+                Southeast Asia's most captivating destinations.
+              </p>
+              <p class="text-muted mb-3"
+                data-en="With deep local knowledge and international standards, we offer carefully curated travel packages that showcase the rich culture, stunning landscapes, and warm hospitality of Malaysia, Indonesia, and Thailand."
+                data-ar="بفضل معرفتنا المحلية العميقة ومعاييرنا الدولية، نقدم باقات سفر مختارة بعناية تُبرز الثقافة الغنية والمناظر الطبيعية الخلابة وكرم الضيافة في ماليزيا وإندونيسيا وتايلاند.">
+                With deep local knowledge and international standards, we offer carefully curated travel packages that
+                showcase the rich culture, stunning landscapes, and warm hospitality of Malaysia, Indonesia, and
+                Thailand.
+              </p>
+              <div class="row g-4 justify-content-center align-items-center">
+                <div class="col-md-5 mb-2 mb-md-0">
+                  <div class="p-4 text-white rounded-3 exp-box">
+                    <span class="d-block fw-bold" style="font-size:2.3rem;" data-en="3+" data-ar="+3">3+</span>
+                    <span class="small" data-en="Years of Experience" data-ar="سنوات من الخبرة">Years of
+                      Experience</span>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div>
+                    <div class="about-features">
+                      <div class="feature-item">
+                        <i class="fas fa-certificate"></i>
+                        <span data-ar="مرخص رسميًا في المملكة العربية السعودية"
+                          data-en="Officially Licensed in Saudi Arabia">Officially Licensed in Saudi Arabia</span>
+                      </div>
+                      <div class="feature-item">
+                        <i class="fas fa-globe-asia"></i>
+                        <span data-ar="متخصصون في جنوب شرق آسيا" data-en="Southeast Asia Specialists">Southeast Asia
+                          Specialists</span>
+                      </div>
+                      <div class="feature-item">
+                        <i class="fas fa-users"></i>
+                        <span data-en="Expert Local Guides" data-ar="مرشدون محليون خبراء">Expert Local Guides</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="#travels" class="btn btn-danger rounded-pill" data-en="Discover Now"
+                  data-ar="اكتشف الآن">Discover Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-padding travels" id="travels">
+      <div class="container">
+        <div class="section-title"  data-aos="zoom-in" data-aos-delay="800">
+          <h6 data-ar="أفضل الوجهات" data-en="Top Destinations">Top Destinations</h6>
+          <h2 data-ar=" اختر وجهتك" data-en="Choose Your Destinations">Choose Your Destinations</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4"  data-aos="fade-up" data-aos-delay="800">
+            <div class="ba-tax-inner h-100">
+              <div class="thumbnail-tax">
+                <div>
+                  <img decoding="async" src="images/mala.jpg" alt="malasyia">
+                </div>
+              </div>
+              <div class="content-tax">
+                <span class="tax-count" data-en="2 Tours" data-ar="جولتان">2 Tours</span>
+
+                <h6 class="tax-name mt-3">
+                  <a href="#" data-en="Malaysia Adventure" data-ar="مغامرة ماليزيا">
+                    Malaysia Adventure
+                  </a>
+                </h6>
+
+                <div class="tax-description"
+                  data-en="Experience Kuala Lumpur's skyline, Penang's heritage, and the pristine beaches of Langkawi in this comprehensive 7-day package."
+                  data-ar="اكتشف أفق كوالالمبور، تراث بينانغ، وشواطئ لانكاوي الخلابة في هذه الباقة الشاملة لمدة 7 أيام.">
+                  Experience Kuala Lumpur's skyline, Penang's heritage, and the pristine beaches of Langkawi in this
+                  comprehensive 7-day package.
+                </div>
+
+                <a class="tax-link" href="#" data-en="View Tour Details" data-ar="عرض تفاصيل الجولة">
+                  <span>View Tour Details</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4"  data-aos="fade-up" data-aos-delay="800">
+            <div class="ba-tax-inner h-100">
+              <div class="thumbnail-tax">
+                <div>
+                  <img decoding="async" src="images/indonesia.jpg" alt="indonesia">
+                </div>
+              </div>
+              <div class="content-tax">
+                <span class="tax-count" data-en="2 Tours" data-ar="جولتان">2 Tours</span>
+
+                <h6 class="tax-name mt-3">
+                  <a href="#" data-en="Indonesian Paradise" data-ar="جنة إندونيسيا">
+                    Indonesian Paradise
+                  </a>
+                </h6>
+
+                <div class="tax-description"
+                  data-en="Immerse yourself in Indonesia's diverse culture, from Bali's spiritual temples to Yogyakarta's royal heritage and stunning volcanic landscapes."
+                  data-ar="انغمس في تنوع الثقافة الإندونيسية، من معابد بالي الروحانية إلى التراث الملكي في يوجياكارتا والمناظر الطبيعية البركانية الخلابة.">
+                  Immerse yourself in Indonesia's diverse culture, from Bali's spiritual temples to Yogyakarta's royal
+                  heritage and stunning volcanic landscapes.
+                </div>
+
+                <a class="tax-link" href="#" data-en="View Tour Details" data-ar="عرض تفاصيل الجولة">
+                  <span>View Tour Details</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4"  data-aos="fade-up" data-aos-delay="800">
+            <div class="ba-tax-inner h-100">
+              <div class="thumbnail-tax">
+                <div>
+                  <img decoding="async" src="images/thailand.jpg" alt="thailand">
+                </div>
+              </div>
+              <div class="content-tax">
+                <span class="tax-count" data-en="2 Tours" data-ar="جولتان">2 Tours</span>
+
+                <h6 class="tax-name mt-3">
+                  <a href="#" data-en="Thailand Discovery" data-ar="اكتشاف تايلاند">
+                    Thailand Discovery
+                  </a>
+                </h6>
+
+                <div class="tax-description"
+                  data-en="Experience the Land of Smiles through Bangkok's golden temples, Phuket's crystal waters, and the cultural richness of Chiang Mai."
+                  data-ar="اكتشف أرض الابتسامات من خلال معابد بانكوك الذهبية، ومياه بوكيت الصافية، وغنى الثقافة في شيانغ ماي.">
+                  Experience the Land of Smiles through Bangkok's golden temples, Phuket's crystal waters, and the
+                  cultural richness of Chiang Mai.
+                </div>
+
+                <a class="tax-link" href="#" data-en="View Tour Details" data-ar="عرض تفاصيل الجولة">
+                  <span>View Tour Details</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+    <section id="why-choose-us" class="section-padding choose-us">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title mb-3" data-aos="fade-up" data-en="Why Choose Almazaya Travel?"
+            data-ar="لماذا تختار المزایا للسفر؟">
+            Why Choose Almazaya Travel?
+          </h2>
+
+          <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200"
+            data-en="We're committed to making your Southeast Asian journey unforgettable"
+            data-ar="نحن ملتزمون بجعل رحلتك إلى جنوب شرق آسيا لا تُنسى">
+            We're committed to making your Southeast Asian journey unforgettable
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-box text-center">
+              <div class="feature-icon">
+                <i class="fas fa-medal"></i>
+              </div>
+
+              <h5 data-en="Expert Guidance" data-ar="إرشاد الخبراء">
+                Expert Guidance
+              </h5>
+
+              <p data-en="Our local experts ensure authentic experiences and insider access to hidden gems."
+                data-ar="يضمن خبراؤنا المحليون تجارب أصيلة ووصولاً حصريًا إلى الكنوز المخفية.">
+                Our local experts ensure authentic experiences and insider access to hidden gems.
+              </p>
+
+              <div class="counter" data-target="1000">0</div>
+
+              <span class="counter-label" data-en="Happy Travelers" data-ar="مسافرون سعداء">
+                Happy Travelers
+              </span>
+            </div>
+
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-box text-center">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+
+              <h5 data-en="Licensed & Insured" data-ar="مرخّص ومؤمَّن">
+                Licensed & Insured
+              </h5>
+
+              <p data-en="Fully licensed in Saudi Arabia with comprehensive travel insurance for peace of mind."
+                data-ar="مرخّص بالكامل في المملكة العربية السعودية مع تأمين سفر شامل لراحة البال.">
+                Fully licensed in Saudi Arabia with comprehensive travel insurance for peace of mind.
+              </p>
+
+              <div class="counter" data-target="3">0</div>
+
+              <span class="counter-label" data-en="Years Experience" data-ar="سنوات خبرة">
+                Years Experience
+              </span>
+            </div>
+
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="feature-box text-center">
+              <div class="feature-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+
+              <h5 data-en="24/7 Support" data-ar="دعم على مدار الساعة">
+                24/7 Support
+              </h5>
+
+              <p data-en="Round-the-clock assistance in Arabic and English throughout your entire journey."
+                data-ar="مساعدة متوفرة على مدار الساعة باللغتين العربية والإنجليزية طوال رحلتك.">
+                Round-the-clock assistance in Arabic and English throughout your entire journey.
+              </p>
+
+              <div class="counter" data-target="24">0</div>
+
+              <span class="counter-label" data-en="Hours Support" data-ar="ساعات دعم">
+                Hours Support
+              </span>
+            </div>
+
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+            <div class="feature-box text-center">
+              <div class="feature-icon">
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+
+              <h5 data-en="Best Value" data-ar="أفضل قيمة">
+                Best Value
+              </h5>
+
+              <p data-en="Competitive pricing with no hidden fees and flexible payment options available."
+                data-ar="أسعار تنافسية بدون رسوم خفية وخيارات دفع مرنة متاحة.">
+                Competitive pricing with no hidden fees and flexible payment options available.
+              </p>
+
+              <div class="counter" data-target="98">0</div>
+
+              <span class="counter-label" data-en="% Satisfaction" data-ar="٪ رضا">
+                % Satisfaction
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title mb-3" data-aos="fade-up" data-en="Get In Touch" data-ar="تواصل معنا">
+            Get In Touch
+          </h2>
+
+          <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200"
+            data-en="Ready to start your Southeast Asian adventure? Contact our travel experts today"
+            data-ar="هل أنت مستعد لبدء مغامرتك في جنوب شرق آسيا؟ تواصل مع خبراء السفر لدينا اليوم">
+            Ready to start your Southeast Asian adventure? Contact our travel experts today
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center align-items-center">
+          <div class="col-9" data-aos="fade-right">
+            <div class="contact-form-container">
+              <form class="contact-form" id="contactForm">
+                <div class="row g-4 justify-content-center align-items-center">
+
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name"
+                        data-en="First Name" data-ar="الاسم الأول">
+                      <label for="firstName" data-en="First Name *" data-ar="الاسم الأول *">First Name *</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name"
+                        data-en="Last Name" data-ar="اسم العائلة">
+                      <label for="lastName" data-en="Last Name *" data-ar="اسم العائلة *">Last Name *</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"
+                        data-en="Email Address" data-ar="البريد الإلكتروني">
+                      <label for="email" data-en="Email Address *" data-ar="البريد الإلكتروني *">Email Address *</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number"
+                        data-en="Phone Number" data-ar="رقم الهاتف">
+                      <label for="phone" data-en="Phone Number *" data-ar="رقم الهاتف *">Phone Number *</label>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <select class="form-select" id="destination" name="destination">
+                        <option value="" data-en="Choose Destination" data-ar="اختر الوجهة">Choose Destination</option>
+                        <option value="malaysia" data-en="Malaysia Adventure" data-ar="مغامرة ماليزيا">Malaysia
+                          Adventure</option>
+                        <option value="indonesia" data-en="Indonesian Paradise" data-ar="جنة إندونيسيا">Indonesian
+                          Paradise</option>
+                        <option value="thailand" data-en="Thailand Discovery" data-ar="اكتشاف تايلاند">Thailand
+                          Discovery</option>
+                        <option value="custom" data-en="Custom Package" data-ar="باقة مخصصة">Custom Package</option>
+                      </select>
+                      <label for="destination" data-en="Preferred Destination *" data-ar="الوجهة المفضلة *">Preferred
+                        Destination *</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="date" class="form-control" id="travelDate" name="travelDate">
+                      <label for="travelDate" data-en="Preferred Travel Date *" data-ar="تاريخ السفر المفضل *">Preferred
+                        Travel Date *</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <select class="form-select" id="travelers" name="travelers">
+                        <option value="" data-en="Number of Travelers" data-ar="عدد المسافرين">Number of Travelers
+                        </option>
+                        <option value="1" data-en="1 Person" data-ar="شخص واحد">1 Person</option>
+                        <option value="2" data-en="2 People" data-ar="شخصان">2 People</option>
+                        <option value="3-4" data-en="3-4 People" data-ar="3-4 أشخاص">3-4 People</option>
+                        <option value="5-8" data-en="5-8 People" data-ar="5-8 أشخاص">5-8 People</option>
+                        <option value="9+" data-en="9+ People" data-ar="9+ أشخاص">9+ People</option>
+                      </select>
+                      <label for="travelers" data-en="Number of Travelers *" data-ar="عدد المسافرين *">Number of
+                        Travelers *</label>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea class="form-control" id="message" name="message" placeholder="Additional Questions"
+                        style="height: 120px" data-en="Additional Questions"
+                        data-ar="أسئلة إضافية "></textarea>
+                      <label for="message" data-en="Additional Questions"
+                        data-ar="أسئلة إضافية">Additional Questions</label>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary btn-lg btn-submit w-100" data-en="Send Message"
+                      data-ar="إرسال الرسالة">
+                      <i class="fas fa-paper-plane me-2"></i>
+                      <span>Send Message</span>
+                    </button>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+    </section>
+  </main>
+  <footer class="footer bg-dark text-light py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <h5 data-en="Almazaya Travel" data-ar="المزايا للسفر">
+              <i class="fas fa-compass me-2"></i>
+              Almazaya Travel
+            </h5>
+
+            <p class="mb-4"
+              data-en="Your trusted partner for exploring the wonders of Southeast Asia. Licensed and registered in Saudi Arabia."
+              data-ar="شريكك الموثوق لاستكشاف عجائب جنوب شرق آسيا. مرخص ومسجل في المملكة العربية السعودية.">
+              Your trusted partner for exploring the wonders of Southeast Asia.
+              Licensed and registered in Saudi Arabia.
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6 class="footer-title" data-en="Quick Links" data-ar="روابط سريعة">
+            Quick Links
+          </h6>
+          <ul class="footer-links">
+            <li>
+              <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+            </li>
+            <li>
+              <a href="#about" data-en="About Us" data-ar="معلومات عنا">About Us</a>
+            </li>
+            <li>
+              <a href="#travels" data-en="Travel Packages" data-ar="باقات السفر">Travel Packages</a>
+            </li>
+            <li>
+              <a href="#why-choose-us" data-en="Why Choose Us" data-ar="لماذا تختارنا">Why Choose Us</a>
+            </li>
+            <li>
+              <a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h6 class="footer-title" data-en="Destinations" data-ar="الوجهات">Destinations</h6>
+          <ul class="footer-links">
+            <li>
+              <a href="#" data-en="Malaysia" data-ar="ماليزيا">Malaysia</a>
+            </li>
+            <li>
+              <a href="#" data-en="Indonesia" data-ar="إندونيسيا">Indonesia</a>
+            </li>
+            <li>
+              <a href="#" data-en="Thailand" data-ar="تايلاند">Thailand</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h6 class="footer-title" data-en="Contact Info" data-ar="معلومات الاتصال">Contact Info</h6>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span data-en="Riyadh, Saudi Arabia" data-ar="الرياض، المملكة العربية السعودية">
+                Riyadh, Saudi Arabia
+              </span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+966567638260</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+966596883869</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <hr class="my-4">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <p class="mb-0" data-en="&copy; 2025 Almazaya Travel. All rights reserved."
+            data-ar="&copy; 2025 المزایا ترافل. جميع الحقوق محفوظة.">
+            &copy; 2025 Almazaya Travel. All rights reserved.
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0" data-en="Licensed Travel Agency in Saudi Arabia"
+            data-ar="وكالة سفر مرخصة في المملكة العربية السعودية">
+            Licensed Travel Agency in Saudi Arabia
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
