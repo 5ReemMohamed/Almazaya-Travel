@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Almazaya Travel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="main-nav" class="navbar navbar-expand-lg text-white fixed-top py-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="index.html">
+                <i class="fas fa-compass mx-2 fs-3"></i>Almazaya Travel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse text-center mt-5 mt-lg-0 " id="navbarNav">
+                <ul
+                    class="navbar-nav mx-auto text-white d-flex justify-content-center align-items-center flex-column gap-4 gap-lg-2 flex-lg-row">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-ar="الرئيسية" data-en="Home" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-ar="من نحن" data-en="About"
+                            href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-ar="الرحلات" data-en="Travels"
+                            href="index.html#travels">Travels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-ar="لماذا نحن" data-en="Why Choose Us"
+                            href="index.html#why-choose-us">Why Choose
+                            Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-ar="اتصل بنا" data-en="Contact"
+                            href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <button class="btn translate-btn mt-4 mt-lg-0" id="translateBtn" data-lang="en">
+                    <i class="fas fa-globe"></i>
+                    <span class="me-2" data-en="العربية" data-ar="English"></span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <header class="hero-section d-flex flex-column justify-content-center align-items-center text-center text-white"
+        id="home">
+        <h6 class="mb-2" data-en="EXPLORE YOUR LIFE" data-ar="اكتشف حياتك" data-aos="fade-up" data-aos-delay="100">
+            EXPLORE YOUR LIFE
+        </h6>
+        <h1 data-aos="fade-up" data-aos-delay="100" class="mb-3" data-en="Discover & book extraordinary trips"
+            data-ar="اكتشف واحجز رحلات استثنائية">
+            Discover & book extraordinary trips
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="100" class="mb-4 description"
+            data-en="Save up to 50% on the best attractions, tours and activities with Almazaya"
+            data-ar="وفر حتى 50% على أفضل المزارات والجولات والأنشطة مع Almazaya">
+            Save up to 50% on the best attractions, tours and activities with Almazaya
+        </p>
+
+
+
+        <div class="d-flex justify-content-center flex-wrap gap-3 text-white small guarantees mt-4 mb-5">
+            <div data-aos="fade-up" data-aos-delay="100" class="mx-3 box h-100 p-4 text-center">
+                <i class="fas fa-tag fa-2x mb-3"></i>
+                <p data-en="100% Best Price Guarantee" data-ar="ضمان أفضل سعر 100%" class="mb-0">100% Best Price
+                    Guarantee</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" class="mx-3 box h-100 p-4 text-center">
+                <i class="fas fa-headset fa-2x mb-3"></i>
+                <p data-en="24/7 Expert Customer Support" data-ar="دعم عملاء على مدار الساعة" class="mb-0">24/7 Expert
+                    Customer
+                    Support</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" class="mx-3 box h-100 p-4 text-center">
+                <i class="fas fa-lock fa-2x mb-3"></i>
+                <p data-en="Fast & Secure Booking" data-ar="حجز سريع وآمن" class="mb-0">Fast & Secure Booking</p>
+            </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100"
+            class="hero-buttons mt-4 d-flex flex-wrap gap-3 justify-content-center align-items-center"
+            data-aos="fade-up" data-aos-delay="600">
+            <a data-ar="استكشف الباقات" data-en="Explore Packages" href="#travels"
+                class="btn btn-primary btn-lg mx-3">Explore
+                Packages</a>
+            <a data-ar="اعرف المزيد" data-en="Learn More" href="#about" class="btn btn-outline-light btn-lg">Learn
+                More</a>
+
+        </div>
+    </header>
+    <main>
+        <section class="section-padding malaysia" id="mala">
+            <div class="container">
+                <ul class="nav nav-pills mb-5 justify-content-center align-items-center gap-4" id="pills-tab"
+                    role="tablist">
+                    <li class="nav-item" role="presentation"><button class="nav-link active" id="pills-kuala-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-kuala" data-ar="كوالالمبور" data-en="Kuala"
+                            type="button" role="tab" aria-controls="pills-kuala" aria-selected="true">Kuala</button>
+                    </li>
+                    <li class="nav-item" role="presentation"><button class="nav-link" id="pills-langkawi-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-langkawi" type="button" role="tab"
+                            aria-controls="pills-langkawi" data-en="Langkawi" data-ar="لانكاوي"
+                            aria-selected="true">Langkawi</button></li>
+                    <li class="nav-item" role="presentation"><button class="nav-link" id="pills-Penang-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-Penang" type="button" data-ar="بينانغ"
+                            data-en="Penang" role="tab" aria-controls="pills-Penang"
+                            aria-selected="true">Penang</button></li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-kuala" role="tabpanel"
+                        aria-labelledby="pills-kuala-tab" tabindex="0">
+                        <div class="row mb-5">
+                            <div class="col-lg-8 mx-auto text-center">
+                                <h2 class="display-4 fw-bold text-title mb-4" data-ar="كوالالمبور"
+                                    data-en="Kuala Lumpur">Kuala Lumpur</h2>
+                                <p class="text-muted"
+                                    data-ar="تتمتع هذه المدينة بمزيج فريد من العناصر، لا مثيل له في أي عاصمة أخرى في العالم. ناطحات سحابها الشاهقة، وبنيتها التحتية الجوفية الرائعة والمتطورة، تمتزج مع غاباتها الاستوائية الشاسعة."
+                                    data-en="This city possesses a unique combination of elements, unmatched by any other capital in the world. Its towering skyscrapers, with magnificent and highly developed underground infrastructure, blend with vast tropical forests.">
+                                    This city possesses a unique combination of elements,
+                                    unmatched by any other capital in the world. Its towering skyscrapers, with
+                                    magnificent and highly developed underground infrastructure, blend with vast
+                                    tropical forests.</p>
+                            </div>
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="card attraction-card h-100 border-0 shadow">
+                                    <div class="card-body p-4 text-center d-flex flex-column gap-2">
+                                        <div
+                                            class="d-flex flex-column gap-1 justify-content-center align-items-center mb-3">
+                                            <div class="feature-icon text-white rounded-circle">
+                                                <i class="fa-solid fa-building"></i>
+                                            </div>
+                                            <h5 class="card-title mb-2" data-en="Petronas Twin Towers"
+                                                data-ar="برجا بتروناس التوأم">
+                                                Petronas Twin Towers
+                                            </h5>
+                                        </div>
+                                        <p class="card-text lh-base text-muted"
+                                            data-en="Located in the center of Kuala Lumpur, standing 452 meters tall, connected by a bridge and surrounded by luxury hotels, beautiful gardens, and dancing fountains."
+                                            data-ar="تقع في وسط كوالالمبور، بارتفاع 452 مترًا، متصلة بجسر ومحاطة بفنادق فاخرة وحدائق جميلة ونافورات راقصة.">
+                                            Located in the center of Kuala Lumpur, standing 452 meters tall, connected
+                                            by a bridge and surrounded by luxury hotels, beautiful gardens, and dancing
+                                            fountains.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="card attraction-card h-100 border-0 shadow">
+                                    <div class="card-body p-4 text-center">
+                                        <div
+                                            class="d-flex flex-column gap-1 justify-content-center align-items-center mb-3">
+                                            <div class="feature-icon text-white rounded-circle">
+                                                <i class="fa-solid fa-shop"></i>
+                                            </div>
+                                            <h5 class="card-title mb-2" data-en="Shopping Malls" data-ar="مراكز التسوق">
+                                                Shopping Malls
+                                            </h5>
+                                        </div>
+                                        <p class="card-text lh-base text-muted"
+                                            data-en="A huge number of malls to suit all visitors and cater to everyone's tastes, offering world-class shopping experiences."
+                                            data-ar="عدد هائل من المراكز التجارية لتناسب جميع الزوار وتلبي جميع الأذواق، وتوفر تجارب تسوق عالمية المستوى.">
+                                            A huge number of malls to suit all visitors and cater to everyone's tastes,
+                                            offering world-class shopping experiences.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="card attraction-card h-100 border-0 shadow">
+                                    <div class="card-body p-4 text-center">
+                                        <div
+                                            class="d-flex flex-column gap-1 justify-content-center align-items-center mb-3">
+                                            <div class="feature-icon text-white rounded-circle">
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <h5 class="card-title mb-2" data-en="Bukit Bintang Street"
+                                                data-ar="شارع بوكيت بينتانغ">
+                                                Bukit Bintang Street
+                                            </h5>
+                                        </div>
+                                        <p class="card-text lh-base text-muted"
+                                            data-en="Bustling 24 hours a day with all kinds of restaurants and cafes, featuring cuisine from every nation in the world."
+                                            data-ar="مزدحم على مدار 24 ساعة بجميع أنواع المطاعم والمقاهي، ويتميز بمأكولات من كل دول العالم.">
+                                            Bustling 24 hours a day with all kinds of restaurants and cafes, featuring
+                                            cuisine from every nation in the world.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="card attraction-card h-100 border-0 shadow">
+                                    <div class="card-body p-4 text-center">
+                                        <div
+                                            class="d-flex flex-column gap-1 justify-content-center align-items-center mb-3">
+                                            <div class="feature-icon text-white rounded-circle">
+                                                <i class="fa-solid fa-moon"></i>
+                                            </div>
+                                            <h5 class="card-title mb-2" data-en="Jalan Alor Street"
+                                                data-ar="شارع جالان ألور">
+                                                Jalan Alor Street
+                                            </h5>
+                                        </div>
+                                        <p class="card-text lh-base text-muted"
+                                            data-en="Night Food Street with all kinds of Indian, Chinese, Thai, and Indonesian restaurants offering authentic flavors."
+                                            data-ar="شارع طعام ليلي يضم جميع أنواع المطاعم الهندية والصينية والتايلاندية والإندونيسية التي تقدم نكهات أصيلة.">
+                                            Night Food Street with all kinds of Indian, Chinese, Thai, and Indonesian
+                                            restaurants offering authentic flavors.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="card attraction-card h-100 border-0 shadow">
+                                    <div class="card-body p-4 text-center">
+                                        <div
+                                            class="d-flex flex-column gap-1 justify-content-center align-items-center mb-3">
+                                            <div class="feature-icon text-white rounded-circle">
+                                                <i class="fa-solid fa-tree"></i>
+                                            </div>
+                                            <h5 class="card-title mb-2" data-en="Diverse Parks"
+                                                data-ar="الحدائق المتنوعة">
+                                                Diverse Parks
+                                            </h5>
+                                        </div>
+                                        <p class="card-text lh-base text-muted"
+                                            data-en="Parks boasting some of the world's most diverse attractions with over 5,000 species of flora and fauna."
+                                            data-ar="حدائق تتميز بوجود بعض من أكثر المعالم تنوعًا في العالم مع أكثر من 5000 نوع من النباتات والحيوانات.">
+                                            Parks boasting some of the world's most diverse attractions with over 5,000
+                                            species of flora and fauna.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="card attraction-card h-100 border-0 shadow">
+                                    <div class="card-body p-4 text-center">
+                                        <div
+                                            class="d-flex flex-column gap-1 justify-content-center align-items-center mb-3">
+                                            <div class="feature-icon text-white rounded-circle">
+                                                <i class="fa-regular fa-gem"></i>
+                                            </div>
+                                            <h5 class="card-title mb-2" data-en="Batu Caves" data-ar="كهوف باتو">
+                                                Batu Caves
+                                            </h5>
+                                        </div>
+                                        <p class="card-text lh-base text-muted"
+                                            data-en="Features the huge golden statue, symbolizing ancient Indian history and offering spiritual experiences."
+                                            data-ar="تتميز بالتمثال الذهبي الضخم الذي يرمز إلى التاريخ الهندي القديم ويمنح الزوار تجارب روحية.">
+                                            Features the huge golden statue, symbolizing ancient Indian history and
+                                            offering spiritual experiences.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="card attraction-card h-100 border-0 shadow">
+                                    <div class="card-body p-4 text-center">
+                                        <div
+                                            class="d-flex flex-column gap-1 justify-content-center align-items-center mb-3">
+                                            <div class="feature-icon text-white rounded-circle">
+                                                <i class="fa-solid fa-train"></i>
+                                            </div>
+                                            <h5 class="card-title mb-2" data-en="Genting Highlands"
+                                                data-ar="مرتفعات جنتنج">
+                                                Genting Highlands
+                                            </h5>
+                                        </div>
+                                        <p class="card-text lh-base text-muted"
+                                            data-en="Magnificent highlands with cable car access, featuring the largest mountain mall in Southeast Asia and an amusement park."
+                                            data-ar="مرتفعات رائعة يمكن الوصول إليها بالتلفريك، وتضم أكبر مركز تسوق جبلي في جنوب شرق آسيا وحديقة ترفيهية.">
+                                            Magnificent highlands with cable car access, featuring the largest mountain
+                                            mall in Southeast Asia and an amusement park.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="card attraction-card h-100 border-0 shadow">
+                                    <div class="card-body p-4 text-center">
+                                        <div
+                                            class="d-flex flex-column gap-1 justify-content-center align-items-center mb-3">
+                                            <div class="feature-icon text-white rounded-circle">
+                                                <i class="fa-solid fa-spa"></i>
+                                            </div>
+                                            <h5 class="card-title mb-2" data-en="Cameron Highlands"
+                                                data-ar="مرتفعات الكاميرون">
+                                                Cameron Highlands
+                                            </h5>
+                                        </div>
+                                        <p class="card-text lh-base text-muted"
+                                            data-en="Captivating scenery with tea plantations and miniatures, all amidst endless green forests."
+                                            data-ar="مناظر خلابة مع مزارع الشاي والمجسمات، وسط غابات خضراء لا تنتهي.">
+                                            Captivating scenery with tea plantations and miniatures, all amidst endless
+                                            green forests.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-langkawi" role="tabpanel" aria-labelledby="pills-langkawi-tab"
+                        tabindex="0">
+                        <div class="row mb-5">
+                            <div class="col-lg-8 mx-auto text-center">
+                                <h2 class="display-4 fw-bold text-title mb-4" data-en="Langkawi Island"
+                                    data-ar="جزيرة لنكاوي">
+                                    Langkawi Island
+                                </h2>
+                                <p class="text-muted"
+                                    data-en="This wonderful and famous island is located on the west coast of Malaysia, characterized by its dry tropical climate suitable for visitors almost all year round. Perfect for families seeking an authentic island experience."
+                                    data-ar="تقع هذه الجزيرة الرائعة والمشهورة على الساحل الغربي لماليزيا، وتتميز بمناخها الاستوائي الجاف المناسب للزوار طوال العام تقريبًا. إنها مثالية للعائلات التي تبحث عن تجربة جزيرية أصيلة.">
+                                    This wonderful and famous island is located on the west coast of Malaysia,
+                                    characterized by its dry tropical climate suitable for visitors almost all year
+                                    round. Perfect for families seeking an authentic island experience.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row g-4">
+                            <!-- Cable Car & Bridge -->
+                            <div class="col-lg-4">
+                                <div class="card langkawi-card h-100 border-0 shadow">
+                                    <div class="card-body p-4 text-center d-flex flex-column gap-2">
+                                        <i class="fa-solid fa-train-tram display-4 mb-4"></i>
+                                        <h5 class="card-title" data-en="Cable Car & Bridge" data-ar="التلفريك والجسر">
+                                            Cable Car & Bridge
+                                        </h5>
+                                        <p class="card-text text-muted"
+                                            data-en="Experience the Langkawi Cable Car and Bridge, 660 meters above sea level with breathtaking panoramic views."
+                                            data-ar="استمتع بركوب تلفريك لنكاوي والجسر المعلق على ارتفاع 660 متر فوق مستوى البحر مع إطلالات بانورامية مذهلة.">
+                                            Experience the Langkawi Cable Car and Bridge, 660 meters above sea level
+                                            with breathtaking panoramic views.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mangrove Tours -->
+                            <div class="col-lg-4">
+                                <div class="card langkawi-card h-100 border-0 shadow">
+                                    <div class="card-body p-4 text-center d-flex flex-column gap-2">
+                                        <i class="fa-solid fa-water display-4 mb-4"></i>
+                                        <h5 class="card-title" data-en="Mangrove Tours" data-ar="جولات المانغروف">
+                                            Mangrove Tours
+                                        </h5>
+                                        <p class="card-text text-muted"
+                                            data-en="Boat trips to mangrove islands, home to bat caves, eagles, and other amazing creatures in their natural habitat."
+                                            data-ar="رحلات بالقارب إلى جزر المانغروف، موطن لكهوف الخفافيش والنسور وكائنات مذهلة أخرى في بيئتها الطبيعية.">
+                                            Boat trips to mangrove islands, home to bat caves, eagles, and other amazing
+                                            creatures in their natural habitat.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Marine Conservation -->
+                            <div class="col-lg-4">
+                                <div class="card langkawi-card h-100 border-0 shadow">
+                                    <div class="card-body p-4 text-center d-flex flex-column gap-2">
+                                        <i class="fa-solid fa-fish display-4 mb-4"></i>
+                                        <h5 class="card-title" data-en="Marine Conservation" data-ar="محمية بحرية">
+                                            Marine Conservation
+                                        </h5>
+                                        <p class="card-text text-muted"
+                                            data-en="Marine Life Conservation Area (Riom), home to more than 200 rare marine species and underwater wonders."
+                                            data-ar="محمية الحياة البحرية (ريوم)، موطن لأكثر من 200 نوع بحري نادر وعجائب تحت الماء.">
+                                            Marine Life Conservation Area (Riom), home to more than 200 rare marine
+                                            species and underwater wonders.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Crocodile Park -->
+                            <div class="col-lg-4">
+                                <div class="card langkawi-card h-100 border-0 shadow">
+                                    <div class="card-body p-4 text-center d-flex flex-column gap-2">
+                                        <i class="fa-solid fa-bug display-4 mb-4"></i>
+                                        <h5 class="card-title" data-en="Crocodile Park" data-ar="حديقة التماسيح">
+                                            Crocodile Park
+                                        </h5>
+                                        <p class="card-text text-muted"
+                                            data-en="Visit the exciting Crocodile Park and witness these magnificent creatures up close in a safe environment."
+                                            data-ar="قم بزيارة حديقة التماسيح المثيرة وشاهد هذه المخلوقات الرائعة عن قرب في بيئة آمنة.">
+                                            Visit the exciting Crocodile Park and witness these magnificent creatures up
+                                            close in a safe environment.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Beach Buggy Safari -->
+                            <div class="col-lg-4">
+                                <div class="card langkawi-card h-100 border-0 shadow">
+                                    <div class="card-body p-4 text-center d-flex flex-column gap-2">
+                                        <i class="fa-solid fa-truck display-4 mb-4"></i>
+                                        <h5 class="card-title" data-en="Beach Buggy Safari"
+                                            data-ar="سفاري العربات الشاطئية">
+                                            Beach Buggy Safari
+                                        </h5>
+                                        <p class="card-text text-muted"
+                                            data-en="Adventure-filled beach buggy safaris to the Monkey Islands and stunning waterfalls through tropical terrain."
+                                            data-ar="مغامرات ممتعة عبر رحلات سفاري بالعربات الشاطئية إلى جزر القرود والشلالات الخلابة وسط التضاريس الاستوائية.">
+                                            Adventure-filled beach buggy safaris to the Monkey Islands and stunning
+                                            waterfalls through tropical terrain.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Stunning Beaches -->
+                            <div class="col-lg-4">
+                                <div class="card langkawi-card h-100 border-0 shadow">
+                                    <div class="card-body p-4 text-center d-flex flex-column gap-2">
+                                        <i class="fa-solid fa-sun display-4 mb-4"></i>
+                                        <h5 class="card-title" data-en="Stunning Beaches" data-ar="شواطئ خلابة">
+                                            Stunning Beaches
+                                        </h5>
+                                        <p class="card-text text-muted"
+                                            data-en="Beautiful beaches including Pantai Cenang, Tanjung Rhu, and Dayang Bunting with crystal-clear waters."
+                                            data-ar="شواطئ رائعة تشمل بانتاي تشينانغ وتانجونغ رو ودايانغ بونتينغ بمياهها الصافية.">
+                                            Beautiful beaches including Pantai Cenang, Tanjung Rhu, and Dayang Bunting
+                                            with crystal-clear waters.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row mt-5">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card border-0 shadow bg-light-orange text-white">
+                                    <div class="card-body p-5 text-center">
+                                        <i class="fa-solid fa-building display-4 mb-3"></i>
+                                        <h4 class="card-title mb-3" data-en="Luxury Accommodation"
+                                            data-ar="إقامة فاخرة">
+                                            Luxury Accommodation
+                                        </h4>
+                                        <p class="card-text"
+                                            data-en="Diverse range of hotels from 3-star comfort to 5-star luxury, ensuring the perfect stay for every budget and preference."
+                                            data-ar="مجموعة متنوعة من الفنادق من راحة الثلاث نجوم إلى رفاهية الخمس نجوم، لضمان إقامة مثالية تناسب كل الميزانيات والتفضيلات.">
+                                            Diverse range of hotels from 3-star comfort to 5-star luxury, ensuring the
+                                            perfect stay for every budget and preference.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-Penang" role="tabpanel" aria-labelledby="pills-Penang-tab"
+                        tabindex="0">
+                        <div class="row mb-5">
+                            <div class="col-lg-8 mx-auto text-center">
+                                <h2 class="display-4 fw-bold text-title mb-4"
+                                    data-en="Penang City - Pearl of the Orient" data-ar="مدينة بينانغ - لؤلؤة الشرق">
+                                    Penang City - Pearl of the Orient
+                                </h2>
+                                <p class="text-muted"
+                                    data-en="One of Malaysia's most beautiful tourist destinations, combining stunning nature, beaches, culture, and history. George Town is a UNESCO World Heritage Site."
+                                    data-ar="واحدة من أجمل الوجهات السياحية في ماليزيا، تجمع بين الطبيعة الخلابة والشواطئ والثقافة والتاريخ. جورج تاون مصنفة كموقع تراث عالمي لليونسكو.">
+                                    One of Malaysia's most beautiful tourist destinations,
+                                    combining stunning nature, beaches, culture, and history. George Town is a UNESCO
+                                    World Heritage Site.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <!-- George Town -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card penang-section border-0 shadow h-100">
+                                <div class="card-body p-4">
+                                    <div
+                                        class="d-flex flex-column gap-3 justify-content-center align-items-center text-center">
+                                        <div class="text-center">
+                                            <i class="fa-solid fa-building display-3"></i>
+                                        </div>
+                                        <div class="">
+                                            <h4 class="mb-3" data-en="George Town" data-ar="جورج تاون">
+                                                George Town
+                                            </h4>
+                                            <ul class="list-unstyled text-muted">
+                                                <li class="mb-3"
+                                                    data-en="Historic city filled with colonial heritage buildings, Chinese temples, and ancient mosques"
+                                                    data-ar="مدينة تاريخية مليئة بالمباني الاستعمارية والمعابد الصينية والمساجد القديمة">
+                                                    Historic city filled with colonial heritage buildings, Chinese
+                                                    temples, and ancient mosques
+                                                </li>
+                                                <li class="mb-3"
+                                                    data-en="Famous for street art and murals that adorn its alleyways"
+                                                    data-ar="مشهور بالفن الجداري والرسومات التي تزين أزقته">
+                                                    Famous for street art and murals that adorn its alleyways
+                                                </li>
+                                                <li class="mb-3"
+                                                    data-en="Popular restaurants and night markets offering delicious Malaysian cuisine"
+                                                    data-ar="مطاعم وأسواق ليلية شهيرة تقدم المأكولات الماليزية الشهية">
+                                                    Popular restaurants and night markets offering delicious Malaysian
+                                                    cuisine
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-section section-padding text-center">
+            <div class="container">
+                <h2 class="mb-5" data-en="Our Photo Gallery" data-ar="معرض الصور">Our Photo Gallery</h2>
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <img src="images/mala/img1.jpg" alt="Gallery 1">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <img src="images/mala/img2.jpg" alt="Gallery 2">
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <img src="images/mala/img3.jpg" alt="Gallery 3">
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <img src="images/mala/img4.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img5.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img6.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img7.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img8.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img9.jpeg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img10.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img11.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img12.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img13.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img14.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img15.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img16.webp" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img17.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img18.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img19.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img20.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img21.jpeg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img22.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img23.webp" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img24.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img25.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img26.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img27.webp" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img28.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img29.jpg" alt="Gallery 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mala/img30.jpg" alt="Gallery 4">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <h5 data-en="Almazaya Travel" data-ar="المزايا للسفر">
+                            <i class="fas fa-compass me-2"></i>
+                            Almazaya Travel
+                        </h5>
+
+                        <p class="mb-4"
+                            data-en="Your trusted partner for exploring the wonders of Southeast Asia. Licensed and registered in Saudi Arabia."
+                            data-ar="شريكك الموثوق لاستكشاف عجائب جنوب شرق آسيا. مرخص ومسجل في المملكة العربية السعودية.">
+                            Your trusted partner for exploring the wonders of Southeast Asia.
+                            Licensed and registered in Saudi Arabia.
+                        </p>
+
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title" data-en="Quick Links" data-ar="روابط سريعة">
+                        Quick Links
+                    </h6>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+                        </li>
+                        <li>
+                            <a href="index.html#about" data-en="About Us" data-ar="معلومات عنا">About Us</a>
+                        </li>
+                        <li>
+                            <a href="index.html#travels" data-en="Travel Packages" data-ar="باقات السفر">Travel
+                                Packages</a>
+                        </li>
+                        <li>
+                            <a href="index.html#why-choose-us" data-en="Why Choose Us" data-ar="لماذا تختارنا">Why
+                                Choose Us</a>
+                        </li>
+                        <li>
+                            <a href="index.html#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-title" data-en="Destinations" data-ar="الوجهات">Destinations</h6>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#mala" data-en="Malaysia" data-ar="ماليزيا">Malaysia</a>
+                        </li>
+                        <li>
+                            <a href="bali.html" data-en="Indonesia" data-ar="إندونيسيا">Indonesia</a>
+                        </li>
+                        <li>
+                            <a href="#" data-en="Thailand" data-ar="تايلاند">Thailand</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h6 class="footer-title" data-en="Contact Info" data-ar="معلومات الاتصال">Contact Info</h6>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-en="Dammam, Saudi Arabia" data-ar="الدمام المملكة العربية السعودية">
+                                Dammam, Saudi Arabia
+                            </span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+966567638260</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+966596883869</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="my-4">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0" data-en="&copy; 2025 Almazaya Travel. All rights reserved."
+                        data-ar="&copy; 2025 المزایا ترافل. جميع الحقوق محفوظة.">
+                        &copy; 2025 Almazaya Travel. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0" data-en="Licensed Travel Agency in Saudi Arabia"
+                        data-ar="وكالة سفر مرخصة في المملكة العربية السعودية">
+                        Licensed Travel Agency in Saudi Arabia
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <a href="https://wa.me/966567638260" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

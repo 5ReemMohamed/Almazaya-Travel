@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Almazaya Travel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="main-nav" class="navbar navbar-expand-lg text-white fixed-top py-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="index.html">
+                <i class="fas fa-compass mx-2 fs-3"></i>Almazaya Travel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse text-center mt-5 mt-lg-0 " id="navbarNav">
+                <ul
+                    class="navbar-nav mx-auto text-white d-flex justify-content-center align-items-center flex-column gap-4 gap-lg-2 flex-lg-row">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-ar="الرئيسية" data-en="Home" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-ar="من نحن" data-en="About"
+                            href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-ar="الرحلات" data-en="Travels"
+                            href="index.html#travels">Travels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-ar="لماذا نحن" data-en="Why Choose Us"
+                            href="index.html#why-choose-us">Why Choose
+                            Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-ar="اتصل بنا" data-en="Contact"
+                            href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <button class="btn translate-btn mt-4 mt-lg-0" id="translateBtn" data-lang="en">
+                    <i class="fas fa-globe"></i>
+                    <span class="me-2" data-en="العربية" data-ar="English"></span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <header class="hero-section d-flex flex-column justify-content-center align-items-center text-center text-white"
+        id="home">
+        <h6 class="mb-2" data-en="EXPLORE YOUR LIFE" data-ar="اكتشف حياتك" data-aos="fade-up" data-aos-delay="100">
+            EXPLORE YOUR LIFE
+        </h6>
+        <h1 data-aos="fade-up" data-aos-delay="100" class="mb-3" data-en="Discover & book extraordinary trips"
+            data-ar="اكتشف واحجز رحلات استثنائية">
+            Discover & book extraordinary trips
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="100" class="mb-4 description"
+            data-en="Save up to 50% on the best attractions, tours and activities with Almazaya"
+            data-ar="وفر حتى 50% على أفضل المزارات والجولات والأنشطة مع Almazaya">
+            Save up to 50% on the best attractions, tours and activities with Almazaya
+        </p>
+
+
+
+        <div class="d-flex justify-content-center flex-wrap gap-3 text-white small guarantees mt-4 mb-5">
+            <div data-aos="fade-up" data-aos-delay="100" class="mx-3 box h-100 p-4 text-center">
+                <i class="fas fa-tag fa-2x mb-3"></i>
+                <p data-en="100% Best Price Guarantee" data-ar="ضمان أفضل سعر 100%" class="mb-0">100% Best Price
+                    Guarantee</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" class="mx-3 box h-100 p-4 text-center">
+                <i class="fas fa-headset fa-2x mb-3"></i>
+                <p data-en="24/7 Expert Customer Support" data-ar="دعم عملاء على مدار الساعة" class="mb-0">24/7 Expert
+                    Customer
+                    Support</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" class="mx-3 box h-100 p-4 text-center">
+                <i class="fas fa-lock fa-2x mb-3"></i>
+                <p data-en="Fast & Secure Booking" data-ar="حجز سريع وآمن" class="mb-0">Fast & Secure Booking</p>
+            </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100"
+            class="hero-buttons mt-4 d-flex flex-wrap gap-3 justify-content-center align-items-center"
+            data-aos="fade-up" data-aos-delay="600">
+            <a data-ar="استكشف الباقات" data-en="Explore Packages" href="#travels"
+                class="btn btn-primary btn-lg mx-3">Explore
+                Packages</a>
+            <a data-ar="اعرف المزيد" data-en="Learn More" href="#about" class="btn btn-outline-light btn-lg">Learn
+                More</a>
+
+        </div>
+    </header>
+
+    <section class="bali-section section-padding" id="bali">
+        <div class="container">
+            <h2 class="mb-5 text-center" data-en="Bali Island" data-ar="جزيرة بالي">Bali Island</h2>
+
+            <div class="row g-4">
+                <!-- Relaxation & Spirituality -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="box">
+                        <h5 data-en="Relaxation & Spirituality" data-ar="الاسترخاء والروحانية">
+                            Relaxation & Spirituality
+                        </h5>
+                        <p class="mb-1 text-muted"
+                            data-en="Yoga and meditation centers in Ubud, plus traditional Balinese massage and spa experiences."
+                            data-ar="مراكز اليوغا والتأمل في أوبود، بالإضافة إلى التدليك البالي التقليدي وتجارب السبا.">
+                            Yoga and meditation centers in Ubud, plus traditional Balinese massage and spa experiences.
+                        </p>
+                        <p class="mb-0 text-muted" data-en="Many retreats offer multi-day packages for wellness and detox."
+                            data-ar="العديد من المنتجعات تقدم برامج متعددة الأيام للعافية وإزالة السموم.">
+                            Many retreats offer multi-day packages for wellness and detox.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Balinese Cuisine -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="box">
+                        <h5 data-en="Balinese Cuisine" data-ar="المطبخ البالي">Balinese Cuisine</h5>
+                        <ul class="food-list p-3 d-flex flex-column gap-3 ">
+                            <li>
+                                <strong data-en="Nasi Goreng" data-ar="ناسي جورينج">Nasi Goreng</strong>
+                                <span class="text-muted" data-en="— classic Indonesian fried rice."
+                                    data-ar="— أرز إندونيسي مقلي كلاسيكي.">— classic Indonesian fried rice.</span>
+                            </li>
+                            <li>
+                                <strong data-en="Mie Goreng" data-ar="مي جورينج">Mie Goreng</strong>
+                                <span class="text-muted" data-en="— fried noodles (often with vegetables or egg)."
+                                    data-ar="— نودلز مقلية (غالبًا مع الخضار أو البيض).">— fried noodles (often with
+                                    vegetables or egg).</span>
+                            </li>
+                            <li>
+                                <strong data-en="Babi Guling" data-ar="بابي جولينج">Babi Guling</strong>
+                                <span class="text-muted" data-en="— Balinese roast pork (local specialty)."
+                                    data-ar="— لحم خنزير مشوي بالي (تخصص محلي).">— Balinese roast pork (local
+                                    specialty).</span>
+                            </li>
+                            <li>
+                                <strong data-en="Vegetarian & Healthy" data-ar="نباتي وصحي">Vegetarian &
+                                    Healthy</strong>
+                                <span data-en="— Ubud has many plant-based and health-conscious options."
+                                    data-ar="— أوبود تضم العديد من الخيارات النباتية والصحية.">— Ubud has many
+                                    plant-based and health-conscious options.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Why Choose Bali -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="box">
+                        <h5 data-en="Why choose Bali?" data-ar="لماذا تختار بالي؟">
+                            Why choose Bali?
+                        </h5>
+                        <p class="mt-4 text-muted"
+                            data-en="Bali offers an unbeatable mix: celebrities & luxury, adventure & nature, rich culture and relaxing wellness options — all with accommodation choices from budget to private-villa 5-star resorts."
+                            data-ar="بالي تقدم مزيجًا لا مثيل له: المشاهير والفخامة، المغامرة والطبيعة، الثقافة الغنية وخيارات الاسترخاء والعافية — مع خيارات إقامة من اقتصادية إلى فيلات خاصة ومنتجعات 5 نجوم.">
+                            Bali offers an unbeatable mix: celebrities & luxury, adventure & nature, rich culture and
+                            relaxing wellness options — all with accommodation choices from budget to private-villa
+                            5-star resorts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="gallery-section section-padding text-center">
+        <div class="container">
+            <h2 class="mb-5" data-en="Our Photo Gallery" data-ar="معرض الصور">Our Photo Gallery</h2>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="images/bali/img1.jpg" alt="Gallery 1">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="images/bali/img2.jpg" alt="Gallery 1">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="images/bali/img3.jpg" alt="Gallery 1">
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <img src="images/bali/img4.jpg" alt="Gallery 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/bali/img5.jpg" alt="Gallery 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/bali/img6.png" alt="Gallery 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/bali/img7.png" alt="Gallery 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/bali/img8.jpg" alt="Gallery 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/bali/img9.jpg" alt="Gallery 1">
+                    </div>
+
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <h5 data-en="Almazaya Travel" data-ar="المزايا للسفر">
+                            <i class="fas fa-compass me-2"></i>
+                            Almazaya Travel
+                        </h5>
+
+                        <p class="mb-4"
+                            data-en="Your trusted partner for exploring the wonders of Southeast Asia. Licensed and registered in Saudi Arabia."
+                            data-ar="شريكك الموثوق لاستكشاف عجائب جنوب شرق آسيا. مرخص ومسجل في المملكة العربية السعودية.">
+                            Your trusted partner for exploring the wonders of Southeast Asia.
+                            Licensed and registered in Saudi Arabia.
+                        </p>
+
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title" data-en="Quick Links" data-ar="روابط سريعة">
+                        Quick Links
+                    </h6>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+                        </li>
+                        <li>
+                            <a href="index.html#about" data-en="About Us" data-ar="معلومات عنا">About Us</a>
+                        </li>
+                        <li>
+                            <a href="index.html#travels" data-en="Travel Packages" data-ar="باقات السفر">Travel
+                                Packages</a>
+                        </li>
+                        <li>
+                            <a href="index.html#why-choose-us" data-en="Why Choose Us" data-ar="لماذا تختارنا">Why
+                                Choose Us</a>
+                        </li>
+                        <li>
+                            <a href="index.html#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-title" data-en="Destinations" data-ar="الوجهات">Destinations</h6>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="malaysia.html" data-en="Malaysia" data-ar="ماليزيا">Malaysia</a>
+                        </li>
+                        <li>
+                            <a href="#bali" data-en="Indonesia" data-ar="إندونيسيا">Indonesia</a>
+                        </li>
+                        <li>
+                            <a href="#" data-en="Thailand" data-ar="تايلاند">Thailand</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h6 class="footer-title" data-en="Contact Info" data-ar="معلومات الاتصال">Contact Info</h6>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-en="Dammam, Saudi Arabia" data-ar="الدمام المملكة العربية السعودية">
+                                Dammam, Saudi Arabia
+                            </span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+966567638260</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+966596883869</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="my-4">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0" data-en="&copy; 2025 Almazaya Travel. All rights reserved."
+                        data-ar="&copy; 2025 المزایا ترافل. جميع الحقوق محفوظة.">
+                        &copy; 2025 Almazaya Travel. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0" data-en="Licensed Travel Agency in Saudi Arabia"
+                        data-ar="وكالة سفر مرخصة في المملكة العربية السعودية">
+                        Licensed Travel Agency in Saudi Arabia
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <a href="https://wa.me/966567638260" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

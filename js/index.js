@@ -5,7 +5,6 @@ function handleNavbarScroll() {
   } else {
     navbar.classList.remove("scrolled");
   }
-  updateActiveNavLink();
   updateScrollProgress();
 }
 
@@ -18,8 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", function () {
   const translateBtn = document.getElementById("translateBtn");
   const translateBtnText = translateBtn ? translateBtn.querySelector("span") : null;
- let currentLang = "en";
-localStorage.setItem("language", currentLang);
+  let currentLang = localStorage.getItem("language") || "en";
+  localStorage.setItem("language", currentLang);
 
   function applyTranslation(lang) {
     document.querySelectorAll("[data-en][data-ar]").forEach(el => {
@@ -43,54 +42,26 @@ localStorage.setItem("language", currentLang);
     document.querySelectorAll(".error-msg").forEach(el => {
       el.textContent = el.dataset[lang] || el.dataset.en;
     });
+
+    // ✅ Re-init Swiper when language changes
+    initSwiper(lang);
   }
 
   applyTranslation(currentLang);
 
- if (translateBtn) {
-  translateBtn.addEventListener("click", function () {
-    currentLang = currentLang === "en" ? "ar" : "en";
-    localStorage.setItem("language", currentLang);
-    applyTranslation(currentLang);
+  if (translateBtn) {
+    translateBtn.addEventListener("click", function () {
+      currentLang = currentLang === "en" ? "ar" : "en";
+      localStorage.setItem("language", currentLang);
+      applyTranslation(currentLang);
 
-    if (navbarCollapse && navbarCollapse.classList.contains("show")) {
-      new bootstrap.Collapse(navbarCollapse).hide();
-    }
-    navbar.classList.add("scrolled"); 
-  });
-}
+      if (navbarCollapse && navbarCollapse.classList.contains("show")) {
+        new bootstrap.Collapse(navbarCollapse).hide();
+      }
+      navbar.classList.add("scrolled");
+    });
+  }
 });
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  });
-});
-
-function updateActiveNavLink() {
-  const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll(".nav-link");
-  let current = "";
-
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.offsetHeight;
-    if (window.scrollY >= sectionTop - 200 && window.scrollY < sectionTop + sectionHeight - 200) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  navLinks.forEach(link => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === "#" + current) {
-      link.classList.add("active");
-    }
-  });
-}
 
 function createScrollProgress() {
   if (!document.querySelector(".scroll-indicator")) {
@@ -99,6 +70,7 @@ function createScrollProgress() {
     document.body.appendChild(progressBar);
   }
 }
+
 function updateScrollProgress() {
   const progressBar = document.querySelector(".scroll-indicator");
   if (progressBar) {
@@ -142,12 +114,11 @@ function animateCounters() {
 
 document.addEventListener("DOMContentLoaded", function () {
   createScrollProgress();
-  updateActiveNavLink();
   updateScrollProgress();
   animateCounters();
 });
 
-document.getElementById("contactForm").addEventListener("submit", function (e) {
+document.getElementById("contactForm")?.addEventListener("submit", function (e) {
   e.preventDefault();
 
   const form = e.target;
@@ -257,7 +228,6 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   }
 });
 
-
 const backToTopBtn = document.getElementById("backToTop");
 if (backToTopBtn) {
   window.addEventListener("scroll", () => {
@@ -273,14 +243,13 @@ if (backToTopBtn) {
   });
 }
 
-
 const navbar = document.getElementById("main-nav");
 const navbarToggler = document.querySelector(".navbar-toggler");
 const navbarCollapse = document.querySelector(".navbar-collapse");
 
 if (navbarToggler) {
   navbarToggler.addEventListener("click", () => {
-    navbar.classList.add("scrolled"); 
+    navbar.classList.add("scrolled");
   });
 }
 
@@ -289,14 +258,44 @@ document.querySelectorAll(".nav-link").forEach(link => {
     if (navbarCollapse && navbarCollapse.classList.contains("show")) {
       new bootstrap.Collapse(navbarCollapse).hide();
     }
-    navbar.classList.add("scrolled"); 
+    navbar.classList.add("scrolled");
   });
 });
+
 document.addEventListener("DOMContentLoaded", function () {
-  // Initialize AOS
   AOS.init({
-    duration: 1000,  
-    once: false,      
-       
+    duration: 1000,
+    once: false,
   });
+
+  const currentLang = localStorage.getItem("language") || "en";
+  initSwiper(currentLang);
 });
+
+let swiper;
+function initSwiper(lang) {
+  if (swiper) swiper.destroy(true, true);
+
+  swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      320: { slidesPerView: 1, spaceBetween: 10 },
+      768: { slidesPerView: 2, spaceBetween: 20 },
+      992: { slidesPerView: 3, spaceBetween: 30 }
+    },
+    direction: "horizontal",
+    rtl: lang === "ar", 
+  });
+}
