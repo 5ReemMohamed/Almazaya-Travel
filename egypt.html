@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Almazaya Travel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="main-nav" class="navbar navbar-expand-lg text-white fixed-top py-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="index.html">
+                <i class="fas fa-compass mx-2 fs-3"></i>Almazaya Travel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse text-center mt-5 mt-lg-0 " id="navbarNav">
+                <ul
+                    class="navbar-nav mx-auto text-white d-flex justify-content-center align-items-center flex-column gap-4 gap-lg-2 flex-lg-row">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-ar="الرئيسية" data-en="Home" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-ar="من نحن" data-en="About"
+                            href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-ar="الرحلات" data-en="Travels"
+                            href="index.html#travels">Travels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-ar="لماذا نحن" data-en="Why Choose Us"
+                            href="index.html#why-choose-us">Why Choose
+                            Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-ar="اتصل بنا" data-en="Contact"
+                            href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <button class="btn translate-btn mt-4 mt-lg-0" id="translateBtn" data-lang="en">
+                    <i class="fas fa-globe"></i>
+                    <span class="me-2" data-en="العربية" data-ar="English"></span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <header class="hero-section d-flex flex-column justify-content-center align-items-center text-center text-white"
+        id="home">
+        <h6 class="mb-2" data-en="EXPLORE YOUR LIFE" data-ar="اكتشف حياتك" data-aos="fade-up" data-aos-delay="100">
+            EXPLORE YOUR LIFE
+        </h6>
+        <h1 data-aos="fade-up" data-aos-delay="100" class="mb-3" data-en="Discover & book extraordinary trips"
+            data-ar="اكتشف واحجز رحلات استثنائية">
+            Discover & book extraordinary trips
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="100" class="mb-4 description"
+            data-en="Save up to 50% on the best attractions, tours and activities with Almazaya"
+            data-ar="وفر حتى 50% على أفضل المزارات والجولات والأنشطة مع Almazaya">
+            Save up to 50% on the best attractions, tours and activities with Almazaya
+        </p>
+
+
+
+        <div class="d-flex justify-content-center flex-wrap gap-3 text-white small guarantees mt-4 mb-5">
+            <div data-aos="fade-up" data-aos-delay="100" class="mx-3 box h-100 p-4 text-center">
+                <i class="fas fa-tag fa-2x mb-3"></i>
+                <p data-en="100% Best Price Guarantee" data-ar="ضمان أفضل سعر 100%" class="mb-0">100% Best Price
+                    Guarantee</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" class="mx-3 box h-100 p-4 text-center">
+                <i class="fas fa-headset fa-2x mb-3"></i>
+                <p data-en="24/7 Expert Customer Support" data-ar="دعم عملاء على مدار الساعة" class="mb-0">24/7 Expert
+                    Customer
+                    Support</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" class="mx-3 box h-100 p-4 text-center">
+                <i class="fas fa-lock fa-2x mb-3"></i>
+                <p data-en="Fast & Secure Booking" data-ar="حجز سريع وآمن" class="mb-0">Fast & Secure Booking</p>
+            </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100"
+            class="hero-buttons mt-4 d-flex flex-wrap gap-3 justify-content-center align-items-center"
+            data-aos="fade-up" data-aos-delay="600">
+            <a data-ar="استكشف الباقات" data-en="Explore Packages" href="index.html#travels"
+                class="btn btn-primary btn-lg mx-3">Explore
+                Packages</a>
+            <a data-ar="اعرف المزيد" data-en="Learn More" href="index.html#about"
+                class="btn btn-outline-light btn-lg">Learn
+                More</a>
+
+        </div>
+    </header>
+    <main>
+        <section class="cairo-section section-padding" id="cairo">
+            <div class="container">
+                <ul class="nav nav-pills mb-5 justify-content-center align-items-center gap-4" id="pills-tab"
+                    role="tablist">
+                    <li class="nav-item" role="presentation"><button class="nav-link active" id="pills-kuala-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-cairo" data-ar="القاهرة" data-en="Cairo"
+                            type="button" role="tab" aria-controls="pills-cairo" aria-selected="true">Cairo</button>
+                    </li>
+                    <li class="nav-item" role="presentation"><button class="nav-link" id="pills-Sharm-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-Sharm" type="button" role="tab"
+                            aria-controls="pills-Sharm" data-en="Sharm El Sheikh" data-ar="لانكاوي"
+                            aria-selected="true">Sharm El Sheikh</button></li>
+                    <li class="nav-item" role="presentation"><button class="nav-link" id="pills-Hurghada-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-Hurghada" type="button" data-ar="الغردقة"
+                            data-en="Hurghada" role="tab" aria-controls="pills-Hurghada"
+                            aria-selected="true">Hurghada</button></li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-cairo" role="tabpanel"
+                        aria-labelledby="pills-cairo-tab" tabindex="0">
+                        <h2 class="text-center cairo-title" data-en="Egypt - Cairo" data-ar="مصر - القاهرة">Egypt -
+                            Cairo</h2>
+                        <p class="text-center mb-5"
+                            data-en="Cairo is the capital and largest city of Egypt, blending Pharaonic, Islamic, Coptic, and modern influences."
+                            data-ar="القاهرة هي عاصمة مصر وأكبر مدنها، تمزج بين الحضارة الفرعونية والإسلامية والقبطية والمعاصرة.">
+                            Cairo is the capital and largest city of Egypt, blending Pharaonic, Islamic, Coptic, and
+                            modern
+                            influences.
+                        </p>
+
+                        <div class="row g-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Location" data-ar=" الموقع"> Location</h4>
+                                    <p class="text-muted"
+                                        data-en="Located on the banks of the Nile River in northern Egypt."
+                                        data-ar="تقع على ضفاف نهر النيل في شمال مصر.">
+                                        Located on the banks of the Nile River in northern Egypt.</p>
+                                    <p class="text-muted"
+                                        data-en="The Nile flows through it, dividing it into East Cairo and Giza to the west."
+                                        data-ar="يمر نهر النيل عبرها، مقسمًا إياها إلى القاهرة شرقًا والجيزة غربًا.">
+                                        The Nile flows through it, dividing it into East Cairo and Giza to the west.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Pharaonic Monuments" data-ar=" الآثار الفرعونية"> Pharaonic Monuments
+                                    </h4>
+                                    <ul class="p-3 d-flex flex-column gap-3">
+                                        <li class="text-muted"
+                                            data-en="The Pyramids of Giza & Sphinx: One of the Seven Wonders of the Ancient World."
+                                            data-ar="أهرامات الجيزة وأبو الهول: إحدى عجائب الدنيا السبع القديمة.">
+                                            The Pyramids of Giza & Sphinx: One of the Seven Wonders of the Ancient
+                                            World.</li>
+                                        <li class="text-muted"
+                                            data-en="Egyptian Museum: Largest collection of Pharaonic antiquities."
+                                            data-ar="المتحف المصري: يضم أكبر مجموعة من الآثار الفرعونية.">
+                                            Egyptian Museum: Largest collection of Pharaonic antiquities.</li>
+                                        <li class="text-muted"
+                                            data-en="Grand Egyptian Museum (GEM): Near the Pyramids, one of the world’s largest museums."
+                                            data-ar="المتحف المصري الكبير: بجوار الأهرامات، من أكبر المتاحف الأثرية في العالم.">
+                                            Grand Egyptian Museum (GEM): Near the Pyramids, one of the world’s largest
+                                            museums.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Islamic Landmarks" data-ar=" المعالم الإسلامية"> Islamic Landmarks
+                                    </h4>
+                                    <ul class="p-3 d-flex flex-column gap-3">
+                                        <li class="text-muted" data-en="Saladin Citadel & Muhammad Ali Mosque."
+                                            data-ar="قلعة صلاح الدين ومسجد محمد علي.">
+                                            Saladin Citadel & Muhammad Ali Mosque.</li>
+                                        <li class="text-muted"
+                                            data-en="Al-Azhar Mosque: One of the oldest universities in the world."
+                                            data-ar="جامع الأزهر: من أقدم الجامعات في العالم.">
+                                            Al-Azhar Mosque: One of the oldest universities in the world.</li>
+                                        <li class="text-muted" data-en="Sultan Hassan & Al-Rifai Mosques."
+                                            data-ar="مسجد السلطان حسن والرفاعي.">
+                                            Sultan Hassan & Al-Rifai Mosques.</li>
+                                        <li class="text-muted" data-en="Khan El-Khalili Bazaar: Famous historic market."
+                                            data-ar="خان الخليلي: سوق تاريخي مشهور.">
+                                            Khan El-Khalili Bazaar: Famous historic market.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Coptic Landmarks" data-ar=" المعالم القبطية"> Coptic Landmarks</h4>
+                                    <ul class="p-3 d-flex flex-column gap-3">
+                                        <li class="text-muted" data-en="The Hanging Church: Oldest church in Cairo."
+                                            data-ar="الكنيسة المعلقة: أقدم كنائس القاهرة.">
+                                            The Hanging Church: Oldest church in Cairo.</li>
+                                        <li class="text-muted"
+                                            data-en="Abu Serga Church: Believed to have sheltered the Holy Family."
+                                            data-ar="كنيسة أبو سرجة: يعتقد أنها آوت العائلة المقدسة.">
+                                            Abu Serga Church: Believed to have sheltered the Holy Family.</li>
+                                        <li class="text-muted" data-en="Coptic Museum: Rare Coptic artifacts."
+                                            data-ar="المتحف القبطي: يضم آثارًا قبطية نادرة.">
+                                            Coptic Museum: Rare Coptic artifacts.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Modern Landmarks" data-ar=" المعالم الحديثة"> Modern Landmarks</h4>
+                                    <ul class="p-3 d-flex flex-column gap-3">
+                                        <li class="text-muted"
+                                            data-en="Cairo Tower: 187 meters tall overlooking the Nile."
+                                            data-ar="برج القاهرة: بارتفاع 187 مترًا يطل على النيل.">
+                                            Cairo Tower: 187 meters tall overlooking the Nile.</li>
+                                        <li class="text-muted"
+                                            data-en="Nile Corniche: Famous for strolling and sightseeing."
+                                            data-ar="كورنيش النيل: مشهور للتنزه ورؤية المعالم.">
+                                            Nile Corniche: Famous for strolling and sightseeing.</li>
+                                        <li class="text-muted" data-en="Baron Palace in Heliopolis."
+                                            data-ar="قصر البارون في مصر الجديدة.">
+                                            Baron Palace in Heliopolis.</li>
+                                        <li class="text-muted"
+                                            data-en="Al-Azhar Park: Modern park with views of Islamic Cairo."
+                                            data-ar="حديقة الأزهر: من أجمل الحدائق المطلة على القاهرة الإسلامية.">
+                                            Al-Azhar Park: Modern park with views of Islamic Cairo.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Weather" data-ar=" الطقس"> Weather</h4>
+                                    <ul class="p-3 d-flex flex-column gap-3">
+                                        <li class="text-muted" data-en="Moderate desert climate."
+                                            data-ar="مناخ صحراوي معتدل.">Moderate desert
+                                            climate.</li>
+                                        <li class="text-muted" data-en="Best time to visit: October - April."
+                                            data-ar="أفضل وقت للزيارة: من أكتوبر إلى أبريل.">
+                                            Best time to visit: October - April.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Popular Food" data-ar=" أشهر الأكلات"> Popular Food</h4>
+                                    <p class="text-muted" data-en="Koshari: The most popular Egyptian dish."
+                                        data-ar="الكشري: أشهر طبق مصري.">
+                                        Koshari: The most popular Egyptian dish.</p>
+                                    <p class="text-muted"
+                                        data-en="Mulukhiyah, ful, and ta'ameya (falafel): Local staples."
+                                        data-ar="الملوخية، الفول، والطعمية: أطباق شعبية أساسية.">
+                                        Mulukhiyah, ful, and ta'ameya (falafel): Local staples.</p>
+                                    <p class="text-muted"
+                                        data-en="Grilled meats and fish: Found in Nile restaurants and popular areas."
+                                        data-ar="اللحوم والأسماك المشوية: متوفرة في مطاعم النيل والمناطق الشعبية.">
+                                        Grilled meats and fish: Found in Nile restaurants and popular areas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-Sharm" role="tabpanel" aria-labelledby="pills-Sharm-tab"
+                        tabindex="0">
+                        <h2 class="text-center sharm-title" data-en="Sharm El Sheikh" data-ar="شرم الشيخ">Sharm El
+                            Sheikh</h2>
+                        <p class="text-center text-muted mb-5"
+                            data-en="Located in the south of the Sinai Peninsula on the Red Sea coast, overlooking the Gulfs of Aqaba and Suez. Known as the 'City of Peace'."
+                            data-ar="تقع في جنوب شبه جزيرة سيناء على ساحل البحر الأحمر، وتطل على خليجي العقبة والسويس. تُعرف باسم مدينة السلام.">
+                            Located in the south of the Sinai Peninsula on the Red Sea coast, overlooking the Gulfs of
+                            Aqaba and Suez. Known as the "City of Peace."
+                        </p>
+
+                        <div class="row g-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Sharm El Sheikh Features" data-ar=" مميزات شرم الشيخ"> Sharm El
+                                        Sheikh Features</h4>
+                                    <ul class="p-3 d-flex flex-column gap-3">
+                                        <li class="text-muted"
+                                            data-en="Weather: Sunny all year round, warm in winter and hot in summer."
+                                            data-ar="الطقس: مشمس طوال العام، دافئ في الشتاء وحار في الصيف.">
+                                            Weather: Sunny all year round, warm in winter and hot in summer.</li>
+                                        <li class="text-muted"
+                                            data-en="Beaches: Clear waters, sandy beaches, and colorful coral reefs."
+                                            data-ar="الشواطئ: مياه صافية، شواطئ رملية، وشعاب مرجانية ملونة.">
+                                            Beaches: Clear waters, sandy beaches, and colorful coral reefs.</li>
+                                        <li class="text-muted"
+                                            data-en="Diving: One of the world's top diving and snorkeling spots."
+                                            data-ar="الغوص: من أفضل وجهات الغوص والغطس في العالم.">
+                                            Diving: One of the world's top diving and snorkeling spots.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Nature & Marine Activities" data-ar=" الأنشطة البحرية والطبيعية">
+                                        Nature & Marine Activities</h4>
+                                    <ul class="p-3 d-flex flex-column gap-3">
+                                        <li class="text-muted"
+                                            data-en="Ras Mohammed Nature Reserve: Famous for coral reefs and rare fish."
+                                            data-ar="محمية رأس محمد: مشهورة بالشعاب المرجانية والأسماك النادرة.">
+                                            Ras Mohammed Nature Reserve: Famous for coral reefs and rare fish.</li>
+                                        <li class="text-muted" data-en="Tiran Island: Ideal for diving and boat trips."
+                                            data-ar="جزيرة تيران: مثالية للغوص ورحلات القوارب.">
+                                            Tiran Island: Ideal for diving and boat trips.</li>
+                                        <li class="text-muted"
+                                            data-en="Naama Bay: Vibrant hub with restaurants, cafes, and markets."
+                                            data-ar="خليج نعمة: مركز نابض بالحياة يضم مطاعم ومقاهي وأسواق.">
+                                            Naama Bay: Vibrant hub with restaurants, cafes, and markets.</li>
+                                        <li class="text-muted" data-en="SOHO Square: Modern entertainment district."
+                                            data-ar="ساحة سوهو: منطقة ترفيهية عصرية.">
+                                            SOHO Square: Modern entertainment district.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Cultural Attractions" data-ar=" المعالم الثقافية"> Cultural
+                                        Attractions</h4>
+                                    <ul class="p-3 d-flex flex-column gap-3">
+                                        <li class="text-muted"
+                                            data-en="Sahaba Mosque: Architectural masterpiece in the Old Market."
+                                            data-ar="مسجد الصحابة: تحفة معمارية في السوق القديم.">
+                                            Sahaba Mosque: Architectural masterpiece in the Old Market.</li>
+                                        <li class="text-muted"
+                                            data-en="Old Market: Popular for souvenirs and local products."
+                                            data-ar="السوق القديم: مشهور بالتذكارات والمنتجات المحلية.">
+                                            Old Market: Popular for souvenirs and local products.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Desert Trips" data-ar=" رحلات الصحراء"> Desert Trips</h4>
+                                    <ul class="p-3 d-flex flex-column gap-3">
+                                        <li class="text-muted"
+                                            data-en="Beach Buggy or Camel Safari in the Sinai Desert."
+                                            data-ar="رحلات البيتش باجي أو السفاري بالجمال في صحراء سيناء.">
+                                            Beach Buggy or Camel Safari in the Sinai Desert.</li>
+                                        <li class="text-muted"
+                                            data-en="Visit Mount Moses & Saint Catherine's Monastery."
+                                            data-ar="زيارة جبل موسى ودير سانت كاترين.">
+                                            Visit Mount Moses & Saint Catherine's Monastery.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Best Time to Visit" data-ar=" أفضل وقت للزيارة"> Best Time to
+                                        Visit</h4>
+                                    <ul class="p-3 d-flex flex-column gap-3">
+                                        <li class="text-muted"
+                                            data-en="March - May or September - November: Ideal weather."
+                                            data-ar="مارس - مايو أو سبتمبر - نوفمبر: طقس مثالي.">
+                                            March - May or September - November: Ideal weather.</li>
+                                        <li class="text-muted" data-en="Winter (Dec - Feb): Warm and pleasant."
+                                            data-ar="الشتاء (ديسمبر - فبراير): دافئ وممتع.">
+                                            Winter (Dec - Feb): Warm and pleasant.</li>
+                                        <li class="text-muted"
+                                            data-en="Summer (Jun - Aug): Hot, but perfect for swimming."
+                                            data-ar="الصيف (يونيو - أغسطس): حار، لكنه مثالي للسباحة.">
+                                            Summer (Jun - Aug): Hot, but perfect for swimming.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Eating in Sharm El Sheikh" data-ar=" الأكل في شرم الشيخ"> Eating
+                                        in Sharm El Sheikh</h4>
+                                    <p class="text-muted" data-en="Restaurants serve fresh seafood and Egyptian dishes."
+                                        data-ar="المطاعم تقدم مأكولات بحرية طازجة وأطباق مصرية.">
+                                        Restaurants serve fresh seafood and Egyptian dishes.</p>
+                                    <p class="text-muted"
+                                        data-en="Popular dishes: Grilled fish, shrimp, crab, falafel, and koshari."
+                                        data-ar="الأطباق المشهورة: السمك المشوي، الجمبري، الكابوريا، الفلافل، والكشري.">
+                                        Popular dishes: Grilled fish, shrimp, crab, falafel, and koshari.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-Hurghada" role="tabpanel" aria-labelledby="pills-Hurghada-tab"
+                        tabindex="0">
+                        <h2 class="text-center hurghada-title" data-en="Hurghada" data-ar="الغردقة">Hurghada</h2>
+                        <p class="text-center mb-5"
+                            data-en="Hurghada is one of the most beautiful and popular tourist destinations in Egypt. It is located on the western coast of the Red Sea, stretching for more than 40 kilometers along the beach. Known as the capital of beach tourism in Egypt."
+                            data-ar="الغردقة من أجمل وأشهر الوجهات السياحية في مصر. تقع على الساحل الغربي للبحر الأحمر وتمتد لأكثر من 40 كيلومترًا على الشاطئ. وتُعرف بأنها عاصمة السياحة الشاطئية في مصر.">
+                            Hurghada is one of the most beautiful and popular tourist destinations in Egypt. It is
+                            located on the western coast of the Red Sea, stretching for more than 40 kilometers along
+                            the beach. Known as the capital of beach tourism in Egypt.
+                        </p>
+
+                        <div class="row g-4" data-aos="fade-up" data-aos-delay="100">
+                            <!-- Beaches -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Beaches & Marine Activities" data-ar=" الشواطئ والأنشطة البحرية">
+                                        Beaches & Marine Activities</h4>
+                                    <ul class="p-3 d-flex flex-column gap-3">
+                                        <li class="text-muted"
+                                            data-en="Turquoise waters and coral reefs make it a paradise for divers."
+                                            data-ar="مياه فيروزية وشعاب مرجانية تجعلها جنة لعشاق الغوص.">
+                                            Turquoise waters and coral reefs make it a paradise for divers.</li>
+                                        <li class="text-muted"
+                                            data-en="Famous for yacht trips to Giftun Island, Mahmoud, and Abu Minqar."
+                                            data-ar="مشهور برحلات اليخوت إلى جزيرة الجفتون ومحمود وأبو منقار.">
+                                            Famous for yacht trips to Giftun Island, Mahmoud, and Abu Minqar.</li>
+                                        <li class="text-muted"
+                                            data-en="Activities: surfing, kitesurfing, parasailing, glass submarines."
+                                            data-ar="أنشطة: ركوب الأمواج، الكايت سيرف، الباراشوت، وغواصات زجاجية.">
+                                            Activities: surfing, kitesurfing, parasailing, glass submarines.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Resorts -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Resorts & Hotels" data-ar=" المنتجعات والفنادق"> Resorts &
+                                        Hotels</h4>
+                                    <p class="text-muted"
+                                        data-en="Hurghada includes dozens of luxury resorts and hotels (3 to 5 stars)."
+                                        data-ar="تضم الغردقة عشرات المنتجعات والفنادق الفاخرة من 3 إلى 5 نجوم.">
+                                        Hurghada includes dozens of luxury resorts and hotels (3 to 5 stars).</p>
+                                    <p class="text-muted"
+                                        data-en="Offers all-inclusive stays with private beaches & facilities."
+                                        data-ar="توفر إقامة شاملة مع شواطئ خاصة ومرافق ترفيهية.">
+                                        Offers all-inclusive stays with private beaches & facilities.</p>
+                                </div>
+                            </div>
+
+                            <!-- Marine Life -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Marine Life" data-ar=" الحياة البحرية"> Marine Life</h4>
+                                    <ul class="p-3 d-flex flex-column gap-3">
+                                        <li class="text-muted"
+                                            data-en="One of the top places to see dolphins, turtles, and sharks."
+                                            data-ar="من أفضل الأماكن لرؤية الدلافين والسلاحف وأسماك القرش.">
+                                            One of the top places to see dolphins, turtles, and sharks.</li>
+                                        <li class="text-muted"
+                                            data-en="Marine reserves: Giftun Island & Abu Nuhas Reef for diving."
+                                            data-ar="محميات بحرية: جزيرة الجفتون وشعاب أبو نحاس للغوص.">
+                                            Marine reserves: Giftun Island & Abu Nuhas Reef for diving.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Landmarks -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Landmarks & Activities" data-ar=" المعالم والأنشطة"> Landmarks &
+                                        Activities</h4>
+                                    <ul class="p-3 d-flex flex-column gap-3">
+                                        <li class="text-muted"
+                                            data-en="New Hurghada Marina: Modern promenade with restaurants & cafes."
+                                            data-ar="مرسى الغردقة الجديد: ممشى سياحي عصري يضم مطاعم ومقاهي.">
+                                            New Hurghada Marina: Modern promenade with restaurants & cafes.</li>
+                                        <li class="text-muted"
+                                            data-en="Saqala & Dahar: Famous shopping & nightlife districts."
+                                            data-ar="السقالة والدهار: مناطق مشهورة بالتسوق والحياة الليلية.">
+                                            Saqala & Dahar: Famous shopping & nightlife districts.</li>
+                                        <li class="text-muted"
+                                            data-en="Desert Safaris: Buggy, camel, or 4x4 trips to Bedouin villages."
+                                            data-ar="رحلات السفاري: بالبيتش باجي أو الجمال أو سيارات الدفع الرباعي إلى القرى البدوية.">
+                                            Desert Safaris: Buggy, camel, or 4x4 trips to Bedouin villages.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Cultural -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Cultural Attractions" data-ar=" المعالم الثقافية"> Cultural
+                                        Attractions</h4>
+                                    <ul class="p-3 d-flex flex-column gap-3">
+                                        <li class="text-muted"
+                                            data-en="Great Mosque of Mina (one of the largest on the Red Sea)."
+                                            data-ar="مسجد المينا الكبير (من أكبر مساجد البحر الأحمر).">
+                                            Great Mosque of Mina (one of the largest on the Red Sea).</li>
+                                        <li class="text-muted" data-en="Saint Mina Coptic Orthodox Church."
+                                            data-ar="الكنيسة القبطية الأرثوذكسية (القديس مينا).">
+                                            Saint Mina Coptic Orthodox Church.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Climate -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Climate" data-ar=" المناخ"> Climate</h4>
+                                    <ul class="p-3 d-flex flex-column gap-3">
+                                        <li class="text-muted" data-en="Sunny desert climate almost year-round."
+                                            data-ar="مناخ صحراوي مشمس طوال العام تقريبًا.">
+                                            Sunny desert climate almost year-round.</li>
+                                        <li class="text-muted"
+                                            data-en="Best time: October - April (mild and ideal for cruises)."
+                                            data-ar="أفضل وقت: من أكتوبر حتى أبريل (معتدل ومناسب للرحلات البحرية).">
+                                            Best time: October - April (mild and ideal for cruises).</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Why Visit -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-card h-100">
+                                    <h4 data-en=" Why Visit Hurghada?" data-ar=" لماذا تزور الغردقة؟"> Why Visit
+                                        Hurghada?</h4>
+                                    <p class="text-muted"
+                                        data-en="Suitable for families, couples, and divers of all levels."
+                                        data-ar="مناسبة للعائلات والأزواج والغواصين من جميع المستويات.">
+                                        Suitable for families, couples, and divers of all levels.</p>
+                                    <p class="text-muted" data-en="Affordable options with prices to suit all budgets."
+                                        data-ar="خيارات بأسعار مناسبة لجميع الميزانيات.">
+                                        Affordable options with prices to suit all budgets.</p>
+                                    <p class="text-muted"
+                                        data-en="An integrated destination combining sea, desert, entertainment, and culture."
+                                        data-ar="وجهة متكاملة تجمع بين البحر والصحراء والترفيه والثقافة.">
+                                        An integrated destination combining sea, desert, entertainment, and culture.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cairo-section section-padding">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            </div>
+        </section>
+        <section class="gallery-section section-padding text-center">
+            <div class="container">
+                <h2 class="mb-5" data-en="Our Photo Gallery" data-ar="معرض الصور">Our Photo Gallery</h2>
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <img src="images/cairo/img1.jpg" alt="Gallery 1">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <img src="images/cairo/img2.png" alt="Gallery 1">
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <img src="images/cairo/img3.jpg" alt="Gallery 1">
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <img src="images/cairo/img4.png" alt="Gallery 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/cairo/img5.jpg" alt="Gallery 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/cairo/img6.jpeg" alt="Gallery 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/cairo/img7.jpg" alt="Gallery 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/cairo/img8.jpg" alt="Gallery 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/cairo/img9.jpg" alt="Gallery 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/cairo/img10.jpg" alt="Gallery 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/cairo/img11.jpg" alt="Gallery 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/cairo/img12.jpg" alt="Gallery 1">
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <h5 data-en="Almazaya Travel" data-ar="المزايا للسفر">
+                            <i class="fas fa-compass me-2"></i>
+                            Almazaya Travel
+                        </h5>
+
+                        <p class="mb-4"
+                            data-en="Your trusted partner for exploring the wonders of Southeast Asia. Licensed and registered in Saudi Arabia."
+                            data-ar="شريكك الموثوق لاستكشاف عجائب جنوب شرق آسيا. مرخص ومسجل في المملكة العربية السعودية.">
+                            Your trusted partner for exploring the wonders of Southeast Asia.
+                            Licensed and registered in Saudi Arabia.
+                        </p>
+
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/share/1BHYk7nLL3/?mibextid=wwXIfr" class="social-link"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/almazayatravel?s=11" class="social-link"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/almazayatravel?igsh=MTA3ZThzYXJlMTRqdQ%3D%3D&utm_source=qr"
+                                class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@almazaya.travel?_t=ZS-8zZ0k34N0l7&_r=1"
+                                class="social-link"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title" data-en="Quick Links" data-ar="روابط سريعة">
+                        Quick Links
+                    </h6>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+                        </li>
+                        <li>
+                            <a href="index.html#about" data-en="About Us" data-ar="معلومات عنا">About Us</a>
+                        </li>
+                        <li>
+                            <a href="index.html#travels" data-en="Travel Packages" data-ar="باقات السفر">Travel
+                                Packages</a>
+                        </li>
+                        <li>
+                            <a href="index.html#why-choose-us" data-en="Why Choose Us" data-ar="لماذا تختارنا">Why
+                                Choose Us</a>
+                        </li>
+                        <li>
+                            <a href="index.html#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-title" data-en="Destinations" data-ar="الوجهات">Destinations</h6>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="malaysia.html" data-en="Malaysia" data-ar="ماليزيا">Malaysia</a>
+                        </li>
+                        <li>
+                            <a href="bali.html" data-en="Indonesia" data-ar="إندونيسيا">Indonesia</a>
+                        </li>
+                        <li>
+                            <a href="thai.html" data-en="Thailand" data-ar="تايلاند">Thailand</a>
+                        </li>
+                        <li>
+                            <a href="#cairo" data-en="Egypt" data-ar="مصر">Egypt</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h6 class="footer-title" data-en="Contact Info" data-ar="معلومات الاتصال">Contact Info</h6>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-en="Dammam, Saudi Arabia" data-ar="الدمام المملكة العربية السعودية">
+                                Dammam, Saudi Arabia
+                            </span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+966567638260</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+966596883869</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="my-4">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0" data-en="&copy; 2025 Almazaya Travel. All rights reserved."
+                        data-ar="&copy; 2025 المزایا ترافل. جميع الحقوق محفوظة.">
+                        &copy; 2025 Almazaya Travel. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0" data-en="Licensed Travel Agency in Saudi Arabia"
+                        data-ar="وكالة سفر مرخصة في المملكة العربية السعودية">
+                        Licensed Travel Agency in Saudi Arabia
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <a href="https://wa.me/966567638260" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

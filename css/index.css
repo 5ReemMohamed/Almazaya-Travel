@@ -160,7 +160,7 @@ header .btn-primary:hover{
 }
 .section-padding{
     padding-top: 100px;
-    padding-bottom: 120px;
+    padding-bottom: 100px;
 }
 .about {
   position: relative;
@@ -705,17 +705,17 @@ html[dir="rtl"] .footer-title::after{
 .tax-link:hover{
   color: #fb5b32;
 }
-.malaysia .nav-pills button{
+.nav-pills button{
 color: #fb5b32;
 font-weight: 600;
 font-size: 1.2rem;
 }
-.malaysia .nav-pills .active{
+.nav-pills .active{
     background-color: #fb5b32 !important;
     position: relative;
     color: var(--white) !important;
 }
-.malaysia .nav-pills .active::after,.malaysia .nav-pills:hover::after{
+.nav-pills .active::after, .nav-pills:hover::after{
       width: 0;
 }
 .malaysia .text-title{
@@ -782,9 +782,28 @@ box-shadow: var(--shadow-medium);
 padding: 20px;
 border-radius: 30px 30px 0px 30px;
 }
-.bali-section .box h5{
+.bali-section .box h5,.info-card h4{
   color: #fb5b32;
   font-weight: 600;
   font-size: 1.4rem;
   margin-bottom: 15px;
 }
+ .phuket-section {
+      padding: 60px 0;
+      background: #f9f9f9;
+    }
+    .phuket-title,.cairo-title {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .info-card {
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      background: white;
+      margin-bottom: 20px;
+      transition: all .4s ease-in-out;
+    }
+    .info-card:hover {
+      transform: translateY(-5px);
+    }
