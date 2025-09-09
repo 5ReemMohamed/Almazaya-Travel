@@ -20,11 +20,13 @@
 
 <body>
   <!-- Navbar -->
-  <nav id="main-nav" class="navbar navbar-expand-lg text-white fixed-top py-4">
+  <nav id="main-nav" class="navbar navbar-expand-lg text-white fixed-top py-1">
     <div class="container">
-      <a class="navbar-brand fw-bold text-white" href="#home">
-        <i class="fas fa-compass mx-2 fs-3"></i>Almazaya Travel
+      <a class="navbar-brand fw-bold text-white d-flex align-items-center" href="#home">
+        <img src="images/logo.png" alt="Logo" class="logo-img me-2">
+        Almazaya Travel
       </a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <i class="fas fa-bars"></i>
       </button>
@@ -201,7 +203,7 @@
                   Experience Kuala Lumpur's skyline, Penang's heritage, and the pristine beaches of Langkawi in this
                   comprehensive 7-day package.
                 </div>
-                <a href="malaysia.html" class="tax-link">View Tour Details</a>
+                <a href="malaysia.html" class="tax-link" data-en="View Tour Details" data-ar="عرض تفاصيل الجولة">View Tour Details</a>
               </div>
 
             </div>
@@ -225,7 +227,7 @@
                   Immerse yourself in Indonesia's diverse culture, from Bali's spiritual temples to Yogyakarta's royal
                   heritage and stunning volcanic landscapes.
                 </div>
-                <a href="bali.html" class="tax-link">View Tour Details</a>
+                <a href="bali.html" class="tax-link" data-en="View Tour Details" data-ar="عرض تفاصيل الجولة">View Tour Details</a>
 
               </div>
 
@@ -251,7 +253,7 @@
                   Experience the Land of Smiles through Bangkok's golden temples, Phuket's crystal waters, and the
                   cultural richness of Chiang Mai.
                 </div>
-                <a href="thai.html" class="tax-link">View Tour Details</a>
+                <a href="thai.html" class="tax-link" data-en="View Tour Details" data-ar="عرض تفاصيل الجولة">View Tour Details</a>
 
               </div>
 
@@ -277,7 +279,7 @@
                   Discover the wonders of Egypt through Cairo’s ancient monuments, Sharm El Sheikh’s Red Sea beauty, and
                   Hurghada’s lively beaches and marine life.
                 </div>
-                <a href="egypt.html" class="tax-link">View Tour Details</a>
+                <a href="egypt.html" class="tax-link" data-en="View Tour Details" data-ar="عرض تفاصيل الجولة">View Tour Details</a>
 
               </div>
 
@@ -523,10 +525,10 @@
       <div class="row g-4">
         <div class="col-lg-4">
           <div class="footer-brand">
-            <h5 data-en="Almazaya Travel" data-ar="المزايا للسفر">
-              <i class="fas fa-compass me-2"></i>
+            <a class="navbar-brand fw-bold text-white d-flex align-items-center" href="#home">
+              <img src="images/logo.png" alt="Logo" class="logo-img me-2">
               Almazaya Travel
-            </h5>
+            </a>
 
             <p class="mb-4"
               data-en="Your trusted partner for exploring the wonders of Southeast Asia. Licensed and registered in Saudi Arabia."
@@ -640,7 +642,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/index.js"></script>
   <script>
-    // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener("click", function (e) {
         e.preventDefault();
@@ -653,7 +654,6 @@
       });
     });
 
-    // Highlight active nav link on scroll
     function updateActiveNavLink() {
       const sections = document.querySelectorAll("section[id]");
       const navLinks = document.querySelectorAll(".nav-link");
